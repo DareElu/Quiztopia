@@ -1,0 +1,12 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "./globals";
+@import "./home";
+@import "./page-transitions";
+@import "./generatedQuiz";
+@import "./results";

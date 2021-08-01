@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.home-form {
+  width: 90%;
+  margin: 2rem 5%;
+}
+
+.frame1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 2;
+}
+
+.frame2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ff8efb;
+  z-index: 2;
+}
+
+.frame3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #8ed2ff;
+  z-index: 2;
+}
+
+.frame4 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #8effa0;
+  z-index: 200;
+}
+
+.generated_quiz-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.generated_quiz-result {
+  padding: 0rem 0.2rem;
+}
+
+.results-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-btn {
+  margin-top: 1rem;
+}
+
+.results-score {
+  margin-left: 5%;
+  color: #6b6b6b;
+}
+
+.results-score .badge h2 {
+  padding: 1rem 3rem;
+  font-size: 40px;
+}
+/*# sourceMappingURL=style.css.map */
