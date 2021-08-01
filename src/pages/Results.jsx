@@ -68,7 +68,10 @@ const Results = () => {
                             <Card.Header>
                                 {result.question
                                     .replaceAll(/&quot;/g, '"')
-                                    .replaceAll(/&#039;/g, "'")}
+                                    .replaceAll(/&shy;/g, "-")
+                                    .replaceAll(/&#039;/g, "'")
+                                    .replaceAll(/&Prime;/g, "'")
+                                    .replaceAll(/&rsquo;/g, "'")}
                             </Card.Header>
                             <Card.Body key={ind}>
                                 <div className="d-grid gap-2">
@@ -85,7 +88,10 @@ const Results = () => {
                                         >
                                             {option
                                                 .replaceAll(/&quot;/g, '"')
-                                                .replaceAll(/&#039;/g, "'")}
+                                                .replaceAll(/&shy;/g, "-")
+                                                .replaceAll(/&#039;/g, "'")
+                                                .replaceAll(/&Prime;/g, "'")
+                                                .replaceAll(/&rsquo;/g, "'")}
                                         </Button>
                                     ))}
                                 </div>

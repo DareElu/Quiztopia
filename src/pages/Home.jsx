@@ -77,7 +77,9 @@ const Home = () => {
             })
             .then(async (amount) => {
                 setMaxQuestions(amount);
-                setQuizCriteria((prev) => ({ ...prev, amount: amount }));
+                if (amount < inputRange) {
+                    setQuizCriteria((prev) => ({ ...prev, amount: amount }));
+                }
             });
     };
 

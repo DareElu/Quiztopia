@@ -157,7 +157,9 @@ const GeneratedQuiz = () => {
                                     {quiz[question].question
                                         .replaceAll(/&quot;/g, '"')
                                         .replaceAll(/&shy;/g, "-")
-                                        .replaceAll(/&#039;/g, "'")}
+                                        .replaceAll(/&#039;/g, "'")
+                                        .replaceAll(/&Prime;/g, "'")
+                                        .replaceAll(/&rsquo;/g, "'")}
                                 </b>
                             </Card.Header>
                             <Card.Body>
@@ -185,7 +187,19 @@ const GeneratedQuiz = () => {
                                                             '"'
                                                         )
                                                         .replaceAll(
+                                                            /&shy;/g,
+                                                            "-"
+                                                        )
+                                                        .replaceAll(
                                                             /&#039;/g,
+                                                            "'"
+                                                        )
+                                                        .replaceAll(
+                                                            /&Prime;/g,
+                                                            "'"
+                                                        )
+                                                        .replaceAll(
+                                                            /&rsquo;/g,
                                                             "'"
                                                         )}
                                                 </Button>
